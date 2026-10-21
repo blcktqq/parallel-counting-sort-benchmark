@@ -1,0 +1,3 @@
+# Optional: only needed to render figures, not to run sorting or benchmarks.
+matplotlib>=3.8,<4
+pandas>=2.0,<4

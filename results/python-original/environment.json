@@ -1,0 +1,29 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_count": 9,
+  "cpu_capacity": 8.0,
+  "start_method": "spawn",
+  "repeats": 5,
+  "seed": 42,
+  "processes": [
+    1,
+    2,
+    4
+  ],
+  "pool_startup": [
+    {
+      "p": 1,
+      "pool_startup_ms": 69.53827399956936
+    },
+    {
+      "p": 2,
+      "pool_startup_ms": 74.43022299958102
+    },
+    {
+      "p": 4,
+      "pool_startup_ms": 70.88681499953964
+    }
+  ],
+  "timing": "Warm pools; includes input slicing, IPC/pickle, local histograms, sequential reduction and output construction. Excludes pool startup, input generation, reference sorting, validation and plotting."
+}

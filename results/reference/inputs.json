@@ -1,0 +1,74 @@
+[
+  {
+    "n": 10000,
+    "k": 256,
+    "lo": -128,
+    "seed": 42,
+    "bytes": 40000,
+    "sha256": "cc3edebfcf80c90b627e4c7a97a53119680381e9c4b99462eae97fe9f9b3d9d8",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 100000,
+    "k": 256,
+    "lo": -128,
+    "seed": 42,
+    "bytes": 400000,
+    "sha256": "13fb9120215cb32d79812ab8fa1822b775d5b13a31ee4ff4375bd73909b86cd1",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 1000000,
+    "k": 256,
+    "lo": -128,
+    "seed": 42,
+    "bytes": 4000000,
+    "sha256": "b0055cb507a14b4ea79ee1d35b2c7a4c17a9e008c40412ede003e836560c9a89",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 10000000,
+    "k": 256,
+    "lo": -128,
+    "seed": 42,
+    "bytes": 40000000,
+    "sha256": "606543c306e2297c9bbfe99f75870bca9b6a6829bb301f392e036717db67aa3d",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 10000,
+    "k": 65536,
+    "lo": -32768,
+    "seed": 42,
+    "bytes": 40000,
+    "sha256": "b4e60dd12b05c827a6a52df08b8940588931f6a3cb07fecc34f21fea2de41aa6",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 100000,
+    "k": 65536,
+    "lo": -32768,
+    "seed": 42,
+    "bytes": 400000,
+    "sha256": "aad42d817a2dbbeac8d8caa5700c5d85bf44a69643880db68100dd13cfee2401",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 1000000,
+    "k": 65536,
+    "lo": -32768,
+    "seed": 42,
+    "bytes": 4000000,
+    "sha256": "c0f72b41d33f68b586a29d1b9f27ce703e8f14aead4ee90defdd9fb1f562cf41",
+    "format": "little-endian int32"
+  },
+  {
+    "n": 10000000,
+    "k": 65536,
+    "lo": -32768,
+    "seed": 42,
+    "bytes": 40000000,
+    "sha256": "5e73e4f8e6a10566818bb86eb4c9e19f8ffe16c1aa5e54baa6e370e043f9fa4c",
+    "format": "little-endian int32"
+  }
+]

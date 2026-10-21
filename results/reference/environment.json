@@ -1,0 +1,67 @@
+{
+  "versions": {
+    "C++": "g++ (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0",
+    "Rust": "rustc 1.85.0 (4d91de4e4 2025-02-17)",
+    "Go": "go version go1.24.0 linux/amd64",
+    "Python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "Node.js": "v24.19.0"
+  },
+  "build_commands": {
+    "C++": [
+      "g++",
+      "-O3",
+      "-std=c++17",
+      "-pthread",
+      "multilang/count_cpp.cpp",
+      "-o",
+      "multilang/bin/count_cpp"
+    ],
+    "Rust": [
+      "rustc",
+      "-O",
+      "--edition=2021",
+      "multilang/count_rust.rs",
+      "-o",
+      "multilang/bin/count_rust"
+    ],
+    "Go": [
+      "go",
+      "build",
+      "-o",
+      "multilang/bin/count_go",
+      "multilang/count_go.go"
+    ]
+  },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_count": 9,
+  "cpu_capacity": 8.0,
+  "processes": [
+    1,
+    2,
+    4
+  ],
+  "repeats": 5,
+  "seed": 42,
+  "GOMAXPROCS": "8",
+  "verification": {
+    "C++": "C++ PASS: 60 datasets x 3 modes",
+    "Rust": "Rust PASS: 60 datasets x 3 modes",
+    "Go": "Go PASS: 60 datasets x 3 modes",
+    "Node.js": "Node.js PASS: 60 datasets x 2 modes, 3 cold tests"
+  },
+  "all_timed_results_checked": true,
+  "quick": false,
+  "node_command": [
+    "node",
+    "multilang/count_node.mjs"
+  ],
+  "node_warmups": {
+    "seq": 10,
+    "warm": 10,
+    "cold": 1
+  },
+  "node_memory": "Int32Array keys, Float64Array integer frequencies exact at tested n. Copied blocks and histograms use transferable ArrayBuffers, no SharedArrayBuffer.",
+  "memory": "All parallel variants copy input blocks; each task owns a private histogram. Python transfers pickled data between processes; compiled programs use threads/goroutines; Node.js transfers owned copied buffers between worker_threads.",
+  "timing": "Read/generation, compilation, reference sorting, equality checks and application startup excluded. Allocation, block copies, dispatch, counting, reduction and output construction included. Cold additionally includes worker creation and shutdown; Go goroutines may reuse OS threads. Go and Node.js use default GC; collections occurring inside a sample are included. Temporary-buffer reclamation may occur at different times across implementations.",
+  "path_note": "Build paths normalized for the public repository; flags and measured sources unchanged."
+}
