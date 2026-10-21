@@ -6,3 +6,10 @@ multilang/data/
 multilang/results/
 multilang/smoke-results/
 results/local-python/
+build/
+*.so
+*.pyd
+openmp/omp_counting.c
+openmp/results/
+openmp/smoke-results/
+*.egg-info/

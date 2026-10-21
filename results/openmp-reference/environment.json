@@ -1,0 +1,32 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "cpu_capacity": 8.0,
+  "extension": "omp_counting.cpython-312-x86_64-linux-gnu.so",
+  "repeats": 5,
+  "warmups": 1,
+  "actual_team_sizes": [
+    1,
+    2,
+    4
+  ],
+  "all_timed_results_checked": true,
+  "OMP_THREAD_LIMIT": null,
+  "memory": "Shared address space; copied input with disjoint block ranges; private uint64 histogram rows; sequential merge and restore.",
+  "timing": "Allocation, sequential copy on parallel path, counting, merge, restore and scope cleanup included; generation, reference, validation, build and application startup excluded. One warmup per configuration. Each parallel call enters a new OpenMP region; the runtime may retain OS threads. No cold worker-pool equivalent is reported.",
+  "compiler": "gcc 13.3.0",
+  "cython": "3.3.0",
+  "language": "C",
+  "compile_flags": [
+    "-O3",
+    "-fopenmp"
+  ],
+  "openmp_runtime": "libgomp.so.1",
+  "directives": {
+    "boundscheck": false,
+    "wraparound": false,
+    "initializedcheck": false,
+    "cdivision": true
+  },
+  "input_hashes_match_five_language_series": true
+}
